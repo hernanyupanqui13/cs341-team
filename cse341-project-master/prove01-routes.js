@@ -1,4 +1,3 @@
-const { checkout, all } = require("./routes/ta01");
 const fs = require("fs");
 
 const requestHandler = (req, res) => {
@@ -6,6 +5,10 @@ const requestHandler = (req, res) => {
         res.write(`<html>
             <head>
                 <title>This is my first app</title>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+                    * {font-family: 'Open Sans', serif, sans-serif;}
+                </style>
             </head>`);
 
         res.write(`
@@ -39,6 +42,10 @@ const requestHandler = (req, res) => {
             res.write(`<html>
                 <head>
                     <title>Users</title>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+                        * {font-family: 'Open Sans', serif, sans-serif;}
+                    </style>
                 </head>
                 <body>
                     <h1>Users</h1>
